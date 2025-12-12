@@ -52,7 +52,7 @@ const ContactUs = () => {
 
     return (
         <section className="container mx-auto px-4 py-12">
-        
+
             <div className="text-center max-w-3xl mx-auto mb-12">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                     Get in Touch
@@ -63,7 +63,7 @@ const ContactUs = () => {
             </div>
 
             <div className="grid lg:grid-cols-3 gap-12">
-               
+
                 <div className="lg:col-span-1">
                     <div className="bg-linear-to-br from-indigo-50 to-purple-50 rounded-2xl p-8">
                         <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-2">
@@ -86,11 +86,11 @@ const ContactUs = () => {
                             ))}
                         </div>
 
-                        
+
                         <div className="mt-12">
                             <h3 className="font-semibold text-gray-900 mb-4">Follow Us</h3>
                             <div className="flex gap-4">
-                                {['Facebook', 'Instagram', 'Twitter', 'Pinterest'].map((platform) => (
+                                {['Facebook', 'Instagram', 'Twitter',].map((platform) => (
                                     <a
                                         key={platform}
                                         href="#"
@@ -104,7 +104,7 @@ const ContactUs = () => {
                     </div>
                 </div>
 
-               
+
                 <div className="lg:col-span-2">
                     <div className="bg-white rounded-2xl shadow-lg p-8">
                         <h2 className="text-2xl font-bold text-gray-900 mb-2">Send us a message</h2>
@@ -183,7 +183,7 @@ const ContactUs = () => {
                         </form>
                     </div>
 
-                  
+
                     <div className="mt-12">
                         <h3 className="text-xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h3>
                         <div className="space-y-4">
