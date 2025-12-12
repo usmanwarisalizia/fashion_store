@@ -18,16 +18,21 @@ app.use(cors({
     origin: process.env.FRONTEND_URL
 }));
 
+
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/api/products', (req, res) => {
     res.json(products);
 });
 
+
 // eslint-disable-next-line no-undef
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Backend Server is running on: http://localhost:${port}`);
 });
+
+
 
 export default app;
